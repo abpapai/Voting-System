@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_pane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfx.Controller.addVoterController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="205.0" layoutY="14.0" prefHeight="58.0" prefWidth="290.0" text="ADD VOTER" textFill="#2e0490">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="122.0" text="Voter ID">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="148.0" layoutY="200.0" text="Voter Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="112.0" layoutY="278.0" text="Voter Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="121.0" layoutY="350.0" text="Phone number">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="185.0" layoutY="420.0" text="Session">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="v_id" layoutX="274.0" layoutY="121.0" promptText="eg.: BCA1819XX" />
+      <TextField fx:id="v_name" layoutX="274.0" layoutY="199.0" promptText="eg. SAIFUL ISLAM" />
+      <TextField fx:id="v_password" layoutX="274.0" layoutY="277.0" promptText="xxxxxxxx" />
+      <TextField fx:id="ph_no" layoutX="274.0" layoutY="349.0" promptText="must be 10 digits" />
+      <TextField fx:id="session" layoutX="274.0" layoutY="419.0" promptText="Starting Session (4 digit)" />
+      <Button fx:id="submit" layoutX="561.0" layoutY="521.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="Submit" textFill="#f8f5f5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="back" layoutX="14.0" layoutY="521.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="Back" textFill="#f8f5f5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

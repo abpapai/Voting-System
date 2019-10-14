@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apane" maxHeight="-Infinity" maxWidth="200.0" minHeight="200.0" minWidth="400.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: D3D3D3;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfx.Controller.CheckVIDController">
+    <children>
+      <TextField fx:id="VID1" layoutX="76.0" layoutY="85.0" promptText="Voter ID" />
+      <Button fx:id="go" layoutX="274.0" layoutY="85.0" mnemonicParsing="false" text="Go" />
+      <Label layoutX="76.0" layoutY="47.0" text="Enter Voter ID">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_pane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfx.Controller.updateVoterController">
+    <children>
+        <Label layoutX="175.0" layoutY="354.0" text="Voter Name" />
+        <Label layoutX="156.0" layoutY="410.0" text="Phone number" />
+        <Label layoutX="180.0" layoutY="472.0" text="Session" />
+        <TextField fx:id="vname" layoutX="274.0" layoutY="349.0" promptText="eg. SAIFUL ISLAM" />
+        <TextField fx:id="phn" layoutX="273.0" layoutY="405.0" promptText="must be 10 digits" />
+        <TextField fx:id="sess" layoutX="273.0" layoutY="467.0" />
+        <Button fx:id="update" layoutX="561.0" layoutY="555.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="Submit" textFill="#f8f5f5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+        <Label contentDisplay="CENTER" layoutX="205.0" layoutY="14.0" prefHeight="58.0" prefWidth="323.0" text="UPDATE VOTER" textFill="#2e0490">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Label>
+      <TableView fx:id="table" layoutX="14.0" layoutY="72.0" prefHeight="138.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="v_id" prefWidth="98.99998474121094" text="VoterID" />
+          <TableColumn fx:id="v_name" prefWidth="185.0" text="Voter Name" />
+            <TableColumn fx:id="ph_no" prefWidth="146.0" text="Phn. No." />
+            <TableColumn fx:id="session" prefWidth="169.0" text="Session" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="14.0" layoutY="555.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="Back" textFill="#f8f5f5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="32.0" layoutY="300.0" prefHeight="21.0" prefWidth="411.0" text="(*)NOTE : Fill all the blocks for Security reasons... " />
+      <Button fx:id="delete" layoutX="624.0" layoutY="110.0" mnemonicParsing="false" text="Delete" />
+    </children>
+</AnchorPane>

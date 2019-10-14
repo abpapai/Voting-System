@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfx.Controller.voterLoginController">
+    <children>
+        <Label alignment="CENTER" layoutX="135.0" layoutY="47.0" prefHeight="43.0" prefWidth="487.0" text="WELCOME VOTER!" textAlignment="CENTER" textFill="#2e0490" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="Algerian" size="40.0" />
+            </font></Label>
+        <Label alignment="CENTER_RIGHT" layoutX="133.0" layoutY="272.0" text="Voter ID">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font></Label>
+        <Label alignment="CENTER_RIGHT" layoutX="126.0" layoutY="379.0" text="Password">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font></Label>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="278.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/adminlogo.jpg" />
+            </image>
+        </ImageView>
+        <TextField fx:id="v_id" layoutX="257.0" layoutY="281.0" prefHeight="31.0" prefWidth="242.0" />
+      <PasswordField fx:id="v_pass" layoutX="260.0" layoutY="383.0" prefHeight="31.0" prefWidth="242.0" />
+      <ImageView fitHeight="43.0" fitWidth="40.0" layoutX="64.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/adminlogo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="69.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/vpass.png" />
+         </image>
+      </ImageView>
+        <Button fx:id="login" layoutX="509.0" layoutY="460.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="Login" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="back" layoutX="64.0" layoutY="460.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="Back" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

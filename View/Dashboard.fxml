@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfx.Controller.dashboardController">
+   <children>
+      <TitledPane animated="false" contentDisplay="CENTER" style="-fx-background-color: #a9a9a9;" text="DASHBOARD" textAlignment="CENTER" textFill="#2e0490">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: D3D3D3;">
+               <children>
+                  <Button fx:id="add_voter" layoutX="275.0" layoutY="37.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="ADD VOTER" textFill="#f7f7f7">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font></Button>
+                  <Button fx:id="add_candidate" layoutX="240.0" layoutY="123.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="220.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="ADD CANDIDATE" textFill="#f8f7f7">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font></Button>
+                  <Button fx:id="update_voter" layoutX="205.0" layoutY="210.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="290.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="UPDATE VOTER" textFill="#f8f7f7">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font></Button>
+                  <Button fx:id="update_candidate" layoutX="170.0" layoutY="300.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="360.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="UPDATE CANDIDATE" textFill="#f8f7f7">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font></Button>
+                  <Button fx:id="voting_result" layoutX="135.0" layoutY="392.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="430.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="CHECK RESULT" textFill="#f8f7f7">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font></Button>
+                  <Button fx:id="start" layoutX="47.0" layoutY="452.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="293.0" style="-fx-background-color: #008000; -fx-background-radius: 30;" text="START VOTING" textFill="WHITE">
+                     <font>
+                        <Font size="23.0" />
+                     </font></Button>
+                  <Button fx:id="stop" layoutX="357.0" layoutY="452.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="290.0" style="-fx-background-radius: 30; -fx-background-color: #ff0000;" text="STOP VOTING" textFill="WHITE">
+                     <font>
+                        <Font size="23.0" />
+                     </font></Button>
+                  <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="84.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="Back" textFill="#f7f7f7">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+        </content>
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

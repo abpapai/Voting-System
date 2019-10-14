@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfx.Controller.updateCanController">
+    <children>
+        <Label alignment="CENTER_RIGHT" layoutX="140.0" layoutY="344.0" text="Candidate Name" />
+        <Label alignment="CENTER_RIGHT" layoutX="91.0" layoutY="422.0" prefHeight="21.0" prefWidth="168.0" text="Achievement / Strength" />
+        <TextArea fx:id="achi" layoutX="279.0" layoutY="402.0" prefHeight="83.0" prefWidth="313.0" />
+        <Button fx:id="update" layoutX="561.0" layoutY="555.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="Update" textFill="#fcf9f9">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Button>
+        <Label alignment="CENTER" layoutX="154.0" layoutY="14.0" prefHeight="58.0" prefWidth="449.0" text="UPDATE CANDIDATE" textFill="#2e0490">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Label>
+        <TextField fx:id="cname" layoutX="279.0" layoutY="339.0" prefHeight="31.0" prefWidth="313.0" promptText="eg. SAIFUL ISLAM" />
+      <Button fx:id="back" layoutX="14.0" layoutY="555.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" style="-fx-background-radius: 30; -fx-background-color: #205ec1;" text="Back" textFill="#f8f6f6">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="10.0" layoutY="72.0" prefHeight="134.0" prefWidth="594.0">
+        <columns>
+          <TableColumn fx:id="c_id" prefWidth="165.0" text="Candidate ID" />
+          <TableColumn fx:id="c_name" prefWidth="180.0" text="Candidate Name" />
+            <TableColumn fx:id="achievement" prefWidth="248.0" text="Achievement" />
+        </columns>
+      </TableView>
+      <Label layoutX="26.0" layoutY="265.0" prefHeight="21.0" prefWidth="449.0" text="(*)NOTE : Fill all the blocks for Security reasons... " />
+      <Button fx:id="delete" layoutX="621.0" layoutY="108.0" mnemonicParsing="false" text="Delete" />
+    </children>
+</AnchorPane>
